@@ -4,6 +4,6 @@ class BodiesController < ApplicationController
   end
 
   def show
-    @body = Body.find(params[:id])
+    @body = Body.find_by(name: params[:name])
   end
 end

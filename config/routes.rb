@@ -1,7 +1,7 @@
 SpaceDataService::Application.routes.draw do
   defaults format: :json do 
     get 'bodies/', to: 'bodies#index', as: 'bodies'
-    get 'bodies/:id', to: 'bodies#show', as: 'body'
+    get 'bodies/:name', to: 'bodies#show', as: 'body'
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
